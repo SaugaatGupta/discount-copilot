@@ -1,0 +1,622 @@
+{
+ "meta": {
+  "city": "Bengaluru",
+  "period_start": "2026-06-01",
+  "period_end": "2026-07-26",
+  "campaign_start": "2026-06-29",
+  "note": "Synthetic data for a concept prototype. Not real restaurants or orders.",
+  "orders": 50688,
+  "control_trend": 1.047
+ },
+ "kpis": {
+  "restaurants": 60,
+  "active_campaigns": 45,
+  "discount_spend": 1773261,
+  "restaurant_funded_spend": 1706629,
+  "loss_making_campaigns": 31,
+  "net_profit_impact": -1263719,
+  "loss_from_loss_making": -1404407
+ },
+ "restaurants": [
+  {
+   "id": "R001",
+   "name": "Banyan Biryani House",
+   "cuisine": "Biryani",
+   "zone": "Koramangala",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.13,
+   "net": -54355,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R002",
+   "name": "Palmyra Tandoor",
+   "cuisine": "North Indian",
+   "zone": "Indiranagar",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.38,
+   "net": -34646,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R003",
+   "name": "Marigold Tiffins",
+   "cuisine": "South Indian",
+   "zone": "HSR Layout",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 1.31,
+   "net": 3700,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R004",
+   "name": "Terrace Slice Lab",
+   "cuisine": "Pizza",
+   "zone": "Whitefield",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.56,
+   "net": 19452,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R005",
+   "name": "Indigo Burger Bar",
+   "cuisine": "Burgers",
+   "zone": "Jayanagar",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 0.26,
+   "net": -5972,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R006",
+   "name": "Ember Noodle Bar",
+   "cuisine": "Chinese",
+   "zone": "Marathahalli",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.07,
+   "net": -35393,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R007",
+   "name": "Monsoon Creamery",
+   "cuisine": "Desserts",
+   "zone": "Koramangala",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 0.82,
+   "net": -1405,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R008",
+   "name": "Cinder Salad Co.",
+   "cuisine": "Healthy",
+   "zone": "Indiranagar",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.18,
+   "net": -40180,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R009",
+   "name": "Banyan Brew House",
+   "cuisine": "Cafe",
+   "zone": "HSR Layout",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 1.77,
+   "net": 5294,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R010",
+   "name": "Harbour Supper Club",
+   "cuisine": "Fine Dine",
+   "zone": "Whitefield",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.11,
+   "net": -113978,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R011",
+   "name": "Cedar Dum Kitchen",
+   "cuisine": "Biryani",
+   "zone": "Jayanagar",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.15,
+   "net": -49106,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R012",
+   "name": "Nilgiri Dhaba",
+   "cuisine": "North Indian",
+   "zone": "Marathahalli",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.03,
+   "net": -30521,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R013",
+   "name": "Terrace Idli Corner",
+   "cuisine": "South Indian",
+   "zone": "Koramangala",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 1.93,
+   "net": 3505,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R014",
+   "name": "Jasmine Slice Lab",
+   "cuisine": "Pizza",
+   "zone": "Indiranagar",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.03,
+   "net": 12796,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R015",
+   "name": "Kokum Burger Bar",
+   "cuisine": "Burgers",
+   "zone": "HSR Layout",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 1.96,
+   "net": 13107,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R016",
+   "name": "Ember Dragon Bowl",
+   "cuisine": "Chinese",
+   "zone": "Whitefield",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.25,
+   "net": -40836,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R017",
+   "name": "Indigo Waffle Bay",
+   "cuisine": "Desserts",
+   "zone": "Jayanagar",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 0.63,
+   "net": -2763,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R018",
+   "name": "Terrace Bowls",
+   "cuisine": "Healthy",
+   "zone": "Marathahalli",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.08,
+   "net": -50849,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R019",
+   "name": "Lantern Brew House",
+   "cuisine": "Cafe",
+   "zone": "Koramangala",
+   "offer": "Free delivery (Rs 39) on orders Rs 199+",
+   "margin_roi": 0.95,
+   "net": -247,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R020",
+   "name": "Jasmine Kitchen & Bar",
+   "cuisine": "Fine Dine",
+   "zone": "Indiranagar",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.21,
+   "net": -123098,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R021",
+   "name": "Basil Dum Kitchen",
+   "cuisine": "Biryani",
+   "zone": "HSR Layout",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.17,
+   "net": -58668,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R022",
+   "name": "Harbour Punjabi Rasoi",
+   "cuisine": "North Indian",
+   "zone": "Whitefield",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.02,
+   "net": -80082,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R023",
+   "name": "Monsoon Darshini",
+   "cuisine": "South Indian",
+   "zone": "Jayanagar",
+   "offer": "20% off up to Rs 80",
+   "margin_roi": 0.83,
+   "net": -1309,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R024",
+   "name": "Jasmine Pizzeria",
+   "cuisine": "Pizza",
+   "zone": "Marathahalli",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 1.71,
+   "net": 7593,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R025",
+   "name": "Saffron Patty Co.",
+   "cuisine": "Burgers",
+   "zone": "Koramangala",
+   "offer": "40% off up to Rs 150",
+   "margin_roi": -0.4,
+   "net": -13081,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R026",
+   "name": "Copper Dragon Bowl",
+   "cuisine": "Chinese",
+   "zone": "Indiranagar",
+   "offer": "30% off up to Rs 120",
+   "margin_roi": 0.22,
+   "net": -36120,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R027",
+   "name": "Banyan Creamery",
+   "cuisine": "Desserts",
+   "zone": "HSR Layout",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R028",
+   "name": "Ember Salad Co.",
+   "cuisine": "Healthy",
+   "zone": "Whitefield",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.4,
+   "net": 16923,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R029",
+   "name": "Banyan Cafe",
+   "cuisine": "Cafe",
+   "zone": "Jayanagar",
+   "offer": "20% off up to Rs 80",
+   "margin_roi": 0.26,
+   "net": -3776,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R030",
+   "name": "Nilgiri Kitchen & Bar",
+   "cuisine": "Fine Dine",
+   "zone": "Marathahalli",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": -0.23,
+   "net": -190238,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R031",
+   "name": "Cardamom Biryani House",
+   "cuisine": "Biryani",
+   "zone": "Koramangala",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.38,
+   "net": 7042,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R032",
+   "name": "Saffron Punjabi Rasoi",
+   "cuisine": "North Indian",
+   "zone": "Indiranagar",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.06,
+   "net": -68375,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R033",
+   "name": "Marigold Darshini",
+   "cuisine": "South Indian",
+   "zone": "HSR Layout",
+   "offer": "20% off up to Rs 80",
+   "margin_roi": -0.05,
+   "net": -6407,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R034",
+   "name": "Cinder Pizzeria",
+   "cuisine": "Pizza",
+   "zone": "Whitefield",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.03,
+   "net": -151624,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R035",
+   "name": "Terrace Grill Shack",
+   "cuisine": "Burgers",
+   "zone": "Jayanagar",
+   "offer": "40% off up to Rs 150",
+   "margin_roi": -0.44,
+   "net": -10762,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R036",
+   "name": "Marigold Noodle Bar",
+   "cuisine": "Chinese",
+   "zone": "Marathahalli",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.39,
+   "net": 13715,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R037",
+   "name": "Jasmine Waffle Bay",
+   "cuisine": "Desserts",
+   "zone": "Koramangala",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R038",
+   "name": "Lantern Bowls",
+   "cuisine": "Healthy",
+   "zone": "Indiranagar",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.35,
+   "net": 12051,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R039",
+   "name": "Pepper Cafe",
+   "cuisine": "Cafe",
+   "zone": "HSR Layout",
+   "offer": "20% off up to Rs 80",
+   "margin_roi": 1.29,
+   "net": 2049,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R040",
+   "name": "Cardamom Kitchen & Bar",
+   "cuisine": "Fine Dine",
+   "zone": "Whitefield",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.38,
+   "net": -71589,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R041",
+   "name": "Basil Biryani Co.",
+   "cuisine": "Biryani",
+   "zone": "Jayanagar",
+   "offer": "Flat Rs 100 off on orders Rs 399+",
+   "margin_roi": 2.43,
+   "net": 19112,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R042",
+   "name": "Pepper Dhaba",
+   "cuisine": "North Indian",
+   "zone": "Marathahalli",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R043",
+   "name": "Nilgiri Darshini",
+   "cuisine": "South Indian",
+   "zone": "Koramangala",
+   "offer": "20% off up to Rs 80",
+   "margin_roi": 2.5,
+   "net": 4349,
+   "verdict": "PROFITABLE"
+  },
+  {
+   "id": "R044",
+   "name": "Lantern Slice Lab",
+   "cuisine": "Pizza",
+   "zone": "Indiranagar",
+   "offer": "50% off up to Rs 300",
+   "margin_roi": 0.14,
+   "net": -61213,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R045",
+   "name": "Saffron Grill Shack",
+   "cuisine": "Burgers",
+   "zone": "HSR Layout",
+   "offer": "40% off up to Rs 150",
+   "margin_roi": 0.01,
+   "net": -18158,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R046",
+   "name": "Terrace Noodle Bar",
+   "cuisine": "Chinese",
+   "zone": "Whitefield",
+   "offer": "40% off up to Rs 150",
+   "margin_roi": -0.3,
+   "net": -18322,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R047",
+   "name": "Kokum Waffle Bay",
+   "cuisine": "Desserts",
+   "zone": "Jayanagar",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R048",
+   "name": "Banyan Green Kitchen",
+   "cuisine": "Healthy",
+   "zone": "Marathahalli",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R049",
+   "name": "Palmyra Cafe",
+   "cuisine": "Cafe",
+   "zone": "Koramangala",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R050",
+   "name": "Palmyra Supper Club",
+   "cuisine": "Fine Dine",
+   "zone": "Indiranagar",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R051",
+   "name": "Saffron Biryani House",
+   "cuisine": "Biryani",
+   "zone": "HSR Layout",
+   "offer": "40% off up to Rs 150",
+   "margin_roi": -0.23,
+   "net": -13419,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R052",
+   "name": "Kokum Dhaba",
+   "cuisine": "North Indian",
+   "zone": "Whitefield",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R053",
+   "name": "Harbour Darshini",
+   "cuisine": "South Indian",
+   "zone": "Jayanagar",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R054",
+   "name": "Banyan Slice Lab",
+   "cuisine": "Pizza",
+   "zone": "Marathahalli",
+   "offer": "40% off up to Rs 150",
+   "margin_roi": -0.53,
+   "net": -17915,
+   "verdict": "LOSS_MAKING"
+  },
+  {
+   "id": "R055",
+   "name": "Harbour Burger Bar",
+   "cuisine": "Burgers",
+   "zone": "Koramangala",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R056",
+   "name": "Saffron Dragon Bowl",
+   "cuisine": "Chinese",
+   "zone": "Indiranagar",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R057",
+   "name": "Nilgiri Creamery",
+   "cuisine": "Desserts",
+   "zone": "HSR Layout",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R058",
+   "name": "Basil Green Kitchen",
+   "cuisine": "Healthy",
+   "zone": "Whitefield",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R059",
+   "name": "Lantern Cafe",
+   "cuisine": "Cafe",
+   "zone": "Jayanagar",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  },
+  {
+   "id": "R060",
+   "name": "Indigo Supper Club",
+   "cuisine": "Fine Dine",
+   "zone": "Marathahalli",
+   "offer": null,
+   "margin_roi": null,
+   "net": null,
+   "verdict": "NO_CAMPAIGN"
+  }
+ ]
+}

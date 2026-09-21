@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discount Copilot</title>
+<meta name="description" content="A GenAI copilot that helps food-delivery sales reps check restaurant discount ROI and pitch better offers. Concept prototype on synthetic data.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f766e'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>%25</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">%</span>
+    <div>
+      <h1>Discount Copilot</h1>
+      <p>AI assistant for restaurant sales reps</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill" id="model-pill" title="Model and data">Synthetic data · Bengaluru</span>
+    <button class="ghost" id="toggle-side" aria-controls="side">Portfolio</button>
+    <button class="ghost" id="new-chat">New chat</button>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="side" id="side">
+    <div class="tabs" role="tablist">
+      <button role="tab" class="tab active" data-tab="portfolio">Portfolio</button>
+      <button role="tab" class="tab" data-tab="evals">Evals</button>
+      <button role="tab" class="tab" data-tab="about">About</button>
+    </div>
+
+    <section class="panel" id="tab-portfolio">
+      <div class="kpis" id="kpis"></div>
+      <div class="list-head">
+        <input id="filter" type="search" placeholder="Filter restaurants, cuisine, zone" aria-label="Filter restaurants">
+        <select id="verdict-filter" aria-label="Filter by verdict">
+          <option value="">All</option>
+          <option value="LOSS_MAKING">Loss-making</option>
+          <option value="PROFITABLE">Profitable</option>
+          <option value="NO_CAMPAIGN">No campaign</option>
+        </select>
+      </div>
+      <ul class="rlist" id="rlist"></ul>
+      <p class="fine">Margin ROI = incremental margin ÷ restaurant-funded discount, measured against a no-discount control group. 1.0x is break-even.</p>
+    </section>
+
+    <section class="panel hidden" id="tab-evals">
+      <div id="evals"></div>
+    </section>
+
+    <section class="panel hidden" id="tab-about">
+      <div class="about">
+        <h3>What this is</h3>
+        <p>A concept prototype of a GenAI sales-enablement tool. Sales reps ask questions in plain English. A Claude agent answers by calling three tools:</p>
+        <ul>
+          <li><b>run_sql</b>: read-only SQL over 50K orders, 60 restaurants and 45 campaigns</li>
+          <li><b>get_campaign_roi</b>: measures each campaign against a control group (difference-in-differences)</li>
+          <li><b>simulate_offer</b>: projects what a new offer would do before the rep pitches it</li>
+        </ul>
+        <h3>Guardrails</h3>
+        <ul>
+          <li>Every number has to come from a tool result, and you can see each tool call under the answer</li>
+          <li>SQL is read-only, the agent has a step limit, and off-topic requests get declined</li>
+          <li>A 40-case eval harness checks accuracy (see the Evals tab)</li>
+        </ul>
+        <h3>Data</h3>
+        <p>All restaurants, orders and campaigns are synthetic. They're generated to include realistic patterns, like deep discounts on high-value orders and discounts that mostly go to repeat customers. This project isn't affiliated with any company.</p>
+      </div>
+    </section>
+  </aside>
+
+  <section class="chat">
+    <div class="thread" id="thread" aria-live="polite">
+      <div class="empty" id="empty">
+        <h2>Which discounts are paying off?</h2>
+        <p>Ask about any restaurant, campaign, zone or offer idea. Every answer is backed by queries you can inspect.</p>
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+    </div>
+    <form class="composer" id="composer">
+      <textarea id="input" rows="1" maxlength="2000" placeholder="Ask about any restaurant's discount..." aria-label="Message"></textarea>
+      <button type="submit" id="send" class="primary" aria-label="Send">Send</button>
+    </form>
+  </section>
+</main>
+
+<script src="vendor/marked.min.js"></script>
+<script src="vendor/purify.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
