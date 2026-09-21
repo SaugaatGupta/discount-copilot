@@ -1,0 +1,15 @@
+{
+  "name": "discount-copilot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GenAI copilot that helps food-delivery sales reps evaluate and pitch restaurant discount campaigns (concept prototype, synthetic data).",
+  "scripts": {
+    "generate": "node scripts/generate-data.mjs && node scripts/build-summary.mjs && node evals/build-cases.mjs",
+    "evals": "node evals/run.mjs",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "alasql": "^4.19.1"
+  }
+}

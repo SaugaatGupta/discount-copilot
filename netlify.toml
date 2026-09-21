@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+  directory = "netlify/functions"
+  # alasql has optional browser/react-native requires that break bundling; ship it as a normal dependency
+  external_node_modules = ["alasql"]
