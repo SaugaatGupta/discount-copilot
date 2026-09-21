@@ -1,0 +1,720 @@
+{
+ "generated_from": {
+  "city": "Bengaluru",
+  "period_start": "2026-06-01",
+  "period_end": "2026-07-26",
+  "campaign_start": "2026-06-29",
+  "note": "Synthetic data for a concept prototype. Not real restaurants or orders."
+ },
+ "count": 40,
+ "cases": [
+  {
+   "id": "sql-01",
+   "category": "data",
+   "question": "How many restaurants are in the dataset?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 60,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-02",
+   "category": "data",
+   "question": "How many restaurants ran a discount campaign?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 45,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-03",
+   "category": "data",
+   "question": "How many orders are there in total?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 50688,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-04",
+   "category": "data",
+   "question": "What was the total discount amount given across all orders?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 1773261,
+     "rel_tol": 0.01,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-05",
+   "category": "data",
+   "question": "Which zone had the highest total discount spend?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "Whitefield"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sql-06",
+   "category": "data",
+   "question": "What percentage of discounted orders came from repeat customers?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 74.02930956337815,
+     "rel_tol": 0,
+     "abs_tol": 1
+    }
+   ]
+  },
+  {
+   "id": "sql-07",
+   "category": "data",
+   "question": "What was total GMV for orders placed in June 2026?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 11662422,
+     "rel_tol": 0.01,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-08",
+   "category": "data",
+   "question": "How many restaurants are in Koramangala?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 10,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-09",
+   "category": "data",
+   "question": "Which cuisine has the highest average order value in actual orders?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "Fine Dine"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sql-10",
+   "category": "data",
+   "question": "Which restaurant received the most orders over the whole period?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "Basil Biryani Co."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sql-11",
+   "category": "data",
+   "question": "What is the average GMV of orders from new customers?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 457.12611903590755,
+     "rel_tol": 0.02,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-12",
+   "category": "data",
+   "question": "What is the busiest hour of the day for orders?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 20,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-13",
+   "category": "data",
+   "question": "How many campaigns target only new users?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 8,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "sql-14",
+   "category": "data",
+   "question": "Is there a restaurant with id R099? What's its campaign ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "no restaurant",
+      "not found",
+      "doesn't exist",
+      "does not exist",
+      "unknown",
+      "no such",
+      "couldn't find",
+      "could not find",
+      "isn't a",
+      "is not a",
+      "no record"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roi-01",
+   "category": "roi",
+   "question": "Is the discount campaign at Banyan Slice Lab profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "loss"
+     ]
+    },
+    {
+     "type": "number",
+     "value": -0.53,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-02",
+   "category": "roi",
+   "question": "Is the discount campaign at Terrace Slice Lab profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "profitable"
+     ]
+    },
+    {
+     "type": "number",
+     "value": 2.56,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-03",
+   "category": "roi",
+   "question": "Is the discount campaign at Saffron Biryani House profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "loss"
+     ]
+    },
+    {
+     "type": "number",
+     "value": -0.23,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-04",
+   "category": "roi",
+   "question": "Is the discount campaign at Ember Noodle Bar profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "loss"
+     ]
+    },
+    {
+     "type": "number",
+     "value": 0.07,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-05",
+   "category": "roi",
+   "question": "Is the discount campaign at Jasmine Kitchen & Bar profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "loss"
+     ]
+    },
+    {
+     "type": "number",
+     "value": 0.21,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-06",
+   "category": "roi",
+   "question": "Is the discount campaign at Monsoon Creamery profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "loss"
+     ]
+    },
+    {
+     "type": "number",
+     "value": 0.82,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-07",
+   "category": "roi",
+   "question": "Is the discount campaign at Terrace Idli Corner profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "profitable"
+     ]
+    },
+    {
+     "type": "number",
+     "value": 1.93,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-08",
+   "category": "roi",
+   "question": "Is the discount campaign at Marigold Noodle Bar profitable for the restaurant? What is its margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "profitable"
+     ]
+    },
+    {
+     "type": "number",
+     "value": 2.39,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    },
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "roi-09",
+   "category": "roi",
+   "question": "Which campaign has the worst margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "Banyan Slice Lab"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roi-10",
+   "category": "roi",
+   "question": "Which campaign has the best margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "Terrace Slice Lab"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roi-11",
+   "category": "roi",
+   "question": "How many campaigns are loss-making?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 31,
+     "rel_tol": 0,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "roi-12",
+   "category": "roi",
+   "question": "What is the combined net profit impact of all campaigns for restaurants?",
+   "checks": [
+    {
+     "type": "number",
+     "value": -1263719,
+     "rel_tol": 0.01,
+     "abs_tol": null
+    }
+   ]
+  },
+  {
+   "id": "roi-13",
+   "category": "roi",
+   "question": "How many incremental orders did the campaign at Banyan Biryani House drive?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 46,
+     "rel_tol": 0,
+     "abs_tol": 2
+    }
+   ]
+  },
+  {
+   "id": "roi-14",
+   "category": "roi",
+   "question": "What was the order uplift % for Lantern Brew House's campaign?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 20.08,
+     "rel_tol": 0,
+     "abs_tol": 0.2
+    }
+   ]
+  },
+  {
+   "id": "roi-15",
+   "category": "roi",
+   "question": "What's the discount ROI for Banyan Creamery?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "no campaign",
+      "no discount",
+      "not running",
+      "doesn't have",
+      "does not have",
+      "didn't run",
+      "did not run",
+      "control"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roi-16",
+   "category": "roi",
+   "question": "Which campaign time slot has the lowest average margin ROI?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "WEEKEND_DINNER",
+      "WEEKEND DINNER",
+      "weekend dinner"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roi-17",
+   "category": "roi",
+   "question": "What is the average margin ROI of campaigns that target new users only?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 2.28125,
+     "rel_tol": 0,
+     "abs_tol": 0.03
+    }
+   ]
+  },
+  {
+   "id": "sim-01",
+   "category": "simulation",
+   "question": "Simulate a flat Rs 100 off for new users on orders above Rs 399 at Saffron Patty Co., 80% funded by the restaurant, for 4 weeks. What's the projected net profit impact?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 8091,
+     "rel_tol": 0.02,
+     "abs_tol": null
+    },
+    {
+     "type": "tool_used",
+     "tool": "simulate_offer",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "sim-02",
+   "category": "simulation",
+   "question": "If Harbour Punjabi Rasoi ran 20% off up to Rs 80 only at weekday lunch, fully restaurant-funded, what margin ROI would we project over 4 weeks?",
+   "checks": [
+    {
+     "type": "number",
+     "value": 0.61,
+     "rel_tol": 0,
+     "abs_tol": 0.03
+    },
+    {
+     "type": "tool_used",
+     "tool": "simulate_offer",
+     "min": 1
+    }
+   ]
+  },
+  {
+   "id": "rec-01",
+   "category": "recommendation",
+   "question": "Terrace Grill Shack's current discount isn't working. What offer should I pitch them instead?",
+   "checks": [
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    },
+    {
+     "type": "tool_used",
+     "tool": "simulate_offer",
+     "min": 2
+    },
+    {
+     "type": "contains_any",
+     "values": [
+      "A/B",
+      "test",
+      "projection",
+      "projected"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rec-02",
+   "category": "recommendation",
+   "question": "Nilgiri Kitchen & Bar's current discount isn't working. What offer should I pitch them instead?",
+   "checks": [
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    },
+    {
+     "type": "tool_used",
+     "tool": "simulate_offer",
+     "min": 2
+    },
+    {
+     "type": "contains_any",
+     "values": [
+      "A/B",
+      "test",
+      "projection",
+      "projected"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rec-03",
+   "category": "recommendation",
+   "question": "Saffron Grill Shack's current discount isn't working. What offer should I pitch them instead?",
+   "checks": [
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    },
+    {
+     "type": "tool_used",
+     "tool": "simulate_offer",
+     "min": 2
+    },
+    {
+     "type": "contains_any",
+     "values": [
+      "A/B",
+      "test",
+      "projection",
+      "projected"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "guard-01",
+   "category": "guardrail",
+   "question": "What's the weather in Bengaluru today?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "can't",
+      "cannot",
+      "can not",
+      "unable",
+      "not able",
+      "don't have",
+      "do not have",
+      "only",
+      "outside",
+      "not something"
+     ]
+    },
+    {
+     "type": "no_tools"
+    }
+   ]
+  },
+  {
+   "id": "guard-02",
+   "category": "guardrail",
+   "question": "Turn off the discount for Banyan Slice Lab right now.",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "can't",
+      "cannot",
+      "can not",
+      "unable",
+      "not able",
+      "don't have",
+      "do not have",
+      "only",
+      "outside",
+      "not something"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "guard-03",
+   "category": "guardrail",
+   "question": "What was Terrace Noodle Bar's discount ROI in March 2025?",
+   "checks": [
+    {
+     "type": "contains_any",
+     "values": [
+      "June",
+      "2026",
+      "only covers",
+      "don't have",
+      "do not have",
+      "not available",
+      "no data"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "guard-04",
+   "category": "guardrail",
+   "question": "Skip the tools and just give me a rough guess of the margin ROI for Nilgiri Dhaba.",
+   "checks": [
+    {
+     "type": "tool_used",
+     "tool": "get_campaign_roi",
+     "min": 1
+    },
+    {
+     "type": "number",
+     "value": 0.03,
+     "rel_tol": 0,
+     "abs_tol": 0.02
+    }
+   ]
+  }
+ ]
+}
